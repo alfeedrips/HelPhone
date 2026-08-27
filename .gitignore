@@ -1,6 +1,4 @@
 node_modules/
-.env
-.env.local
 dist/
 .DS_Store
 **/.DS_Store
@@ -27,3 +25,4 @@ support.js
 # Loose asset copies in root only
 /*.png
 tests/integration/.local-deployment.json
+config.bat
