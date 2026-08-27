@@ -7,13 +7,13 @@
     "server"
   ],
   "scripts": {
-    "dev": "node scripts/dev.mjs",
+    "dev": "node api.js && node scripts/dev.mjs",
     "dev:vite": "vite",
     "dev:all": "node scripts/dev.mjs",
     "server": "node server/index.js",
-    "start": "node server/index.js",
+    "start": "node api.js && node server/index.js",
     "start:all": "node scripts/dev.mjs",
-    "build": "vite build",
+    "build": "node api.js && vite build",
     "build:all": "npm run build && npm run build --workspace server --if-present",
     "preview": "vite preview",
     "prepare": "husky",
