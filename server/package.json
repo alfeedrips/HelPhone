@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "build": "node -e \"process.exit(0)\"",
+    "start": "node init && node index.js",
+    "build": "node init && node -e \"process.exit(0)\"",
     "test": "node --test *.test.js"
   },
   "dependencies": {
